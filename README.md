@@ -1,2 +1,4 @@
-# igochkov.github.io
-My blog
+[blog.gochkov.com](http://blog.gochkov.com)
+=============
+
+Jekyll Source for my Blog!
