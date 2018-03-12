@@ -1,4 +1,4 @@
-title: Ivaylo Gochkov - personal blog
+title: Ivaylo Gochkov
 author: Ivaylo Gochkov
 url: http://blog.gochkov.com
 github_username:  igochkov
@@ -14,9 +14,3 @@ minima:
   date_format: "%d %B %Y" # http://shopify.github.io/liquid/filters/date/
 
 markdown: kramdown
-# plugins:
-#   - jekyll-feed
-
-# header_pages:
-#   - about.md
-#   - index.md

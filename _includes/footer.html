@@ -4,7 +4,7 @@
   <div class="wrapper">
     <div class="footer-col-wrapper">
       <div style="float:left">
-            &copy; 2018
+            &copy; {{ 'now' | date: "%Y" }}
             {% if site.author %}
               {{ site.author | escape }}
             {% endif %}
