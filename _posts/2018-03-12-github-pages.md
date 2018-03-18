@@ -3,7 +3,7 @@ layout: post
 title:  "Setup My GitHub Pages"
 date:   2018-03-12 12:00:00 +0100
 categories: blog github setup
-comments: true
+comments: false
 ---
 
 This is a quick reference on how I setup GitHub Pages with custom sub-domain.
