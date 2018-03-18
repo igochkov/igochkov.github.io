@@ -11,10 +11,10 @@ rss: rss
 google_analytics: UA-114964508-1
 
 timezone: Europe/Amsterdam
-show_excerpts: false
-
+permalink: /:title
 markdown: kramdown
 theme: minima
+show_excerpts: false
 
 minima:
   date_format: "%d %B %Y"
