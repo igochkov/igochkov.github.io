@@ -9,7 +9,7 @@ stackoverflow_user: '6793719'
 rss: rss
 
 # google_analytics: UA-114964508-1
-application-insights: dce76921-d897-4d62-83d8-01124f0df349
+application_insights: dce76921-d897-4d62-83d8-01124f0df349
 
 timezone: Europe/Amsterdam
 permalink: /:title
