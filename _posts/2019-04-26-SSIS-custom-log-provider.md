@@ -1,21 +1,14 @@
 ---
 layout: post
-title:  "SSIS Custom Log Provider"
+title:  "Integration Services (SSIS) - Custom Log Provider"
 comments: true
 ---
 
-> This blog summarizes the steps needed to create, deploy, and use custom log provider. It is based on the excellent documentation provided by Microsoft.
+> This blog summarizes the steps needed to create and deploy custom log provider. It is based on the excellent documentation provided by Microsoft.
 
-> All example paths in this blog are targeting SQL Server 2016.
-> All links in this blog navigate to SQL Server version 2016.
+> The links and examples in this blog are targeting SQL Server 2016.
 
-SQL Server Integration Services (SSIS) has extended logging capabilities. Logging can be done in packages, containers, tasks and captures wide range of events during package execution. The events data can be written to multiple logs simultaneously. 
-
-To enable logging, you have to choose one of the standard log providers Integration Services is coming with: *Text File*, *XML File*, *SQL Server Profiler*, *SQL Server*, or *Windows Event Log*. The log provider specifies the format for the log data. But what if you need to format your log data differently? In case the standard log providers does not fit your needs, you can create your custom log provider.
- 
-### Custom Log Provider
-
-#### Create
+### Create
 1. Create a new class library project. For the examples I am using C# but any of the managed programming languages in .NET can be used. 
    
 2. Reference [`Microsoft.SqlServer.ManagedDTS.dll`][3]{:target="_blank"} into your project which contain the [`Microsoft.SqlServer.Dts.Runtime`][4]{:target="_blank"} namespace. The DLL can be found at the locations listed in [*Locating Assemblies*][5]{:target="_blank"}.
@@ -79,7 +72,7 @@ namespace MyNamespace
 }
 ```
 
-#### Deploy
+### Deploy
 
 1. Copy the compiled assembly to the `LogProviders`  folder.
 
@@ -98,38 +91,11 @@ namespace MyNamespace
 After deployment restart of the SSIS Designer is required. 
    
 
-#### Debug
+### Debug
 
 More information about testing and debugging custom log provider can be found [here][14]{:target="_blank"}.
 
-### SSIS Logging
-
-#### Enable
-
-Logging can be enable in two ways: during development in Visual Studio with SQL Server Data Tools (SSDT) or after deployment on the SSIS Server itself. The logging configuration applied to the SSIS Server will override the logging configuration from SSDT.
-
-##### Enable in SSDT
-
-    TODO: write
-
-##### Enable on the SSIS Server
-
-    TODO: write
-
-#### Configure
-
-The configuration of the logging can be done visually via the *SSIS Logs Dialog Box* or with *Saved Configuration File*. The second is handy when exactly the same configuration has to be applied multiple times so we need a template.
-
-##### Configure with SSIS Logs Dialog Box
-
-    TODO: write
-
-##### Configure with Saved Configuration File
-
-    TODO: write
-
 ### Links to Microsoft Docs
-- [Integration Services (SSIS) Logging][1]{:target="_blank"}
 - [Creating a Custom Log Provider][2]{:target="_blank"}
 - [Coding a Custom Log Provider][13]{:target="_blank"}
 - [Developing Custom Objects for Integration Services][11]{:target="_blank"}
@@ -138,7 +104,6 @@ The configuration of the logging can be done visually via the *SSIS Logs Dialog 
 - [Testing and Debugging Your Code][14]{:target="_blank"}
   
 <!-- Links -->
-[1]: https://docs.microsoft.com/en-us/sql/integration-services/performance/integration-services-ssis-logging?view=sql-server-2016
 [2]: https://docs.microsoft.com/en-us/sql/integration-services/extending-packages-custom-objects/log-provider/creating-a-custom-log-provider?view=sql-server-2016
 [3]: https://docs.microsoft.com/en-us/sql/integration-services/integration-services-programming-overview?view=sql-server-2016#commonly-used-assemblies
 [4]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.sqlserver.dts.runtime?view=sqlserver-2016
