@@ -88,7 +88,7 @@ namespace MyNamespace
         
         `gacutil /iF MyCustomLogProvider.dll`
     
-After deployment restart of the SSIS Designer is required. 
+After deployment, restart of the SSIS Designer is required. 
    
 
 ### Debug
