@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Integration Services (SSIS) - Custom Log Provider"
-comments: true
+comments: false
 ---
 
 > This blog summarizes the steps needed to create and deploy custom log provider. It is based on the excellent documentation provided by Microsoft.
