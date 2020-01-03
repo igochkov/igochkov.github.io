@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Integration Services (SSIS) - Logging"
-comments: true
+comments: false
 ---
 
 > This blog summarizes the steps needed to enable and configure SSIS logging. It is based on the excellent documentation provided by Microsoft.
