@@ -6,13 +6,13 @@ comments: false
 
 Do you have to cleanup Repos and Pipelines in Azure DevOps (former TFS) after an old legacy project? The chances are that you will face the same challenge as I did, namely:
 
-> How to preserve the Azure pipeline templates after deletion for future reference or restore?
+> How to preserve after deletion the Azure pipeline templates for future reference or restore?
 
 ### The problem
 
-The Azure Repos have a nice nifty feature. In both Git and Team foundation version control (TFVC) when you delete source control item it actually just hides it from you. You still have the option to restore/undelete the item when needed. We call this feature "soft delete" or "logical delete". Next to your repository, you probably have Azure pipeline for building and releasing of your project as well. To my surprise, logical delete is not supported there. When you delete build and release templates they are gone. Forever.
+The Azure Repos have a nice nifty feature. In both Git and Team foundation version control (TFVC) when you delete source control item it actually just hides it from you. You still have the option to restore/undelete the item when needed. We call this feature "soft delete" or "logical delete". Next to your repository, you probably have Azure pipeline for building and releasing of your project as well. To my surprise, logical delete is not supported there. When you delete build and release templates, they are gone. Forever.
 
-In my opinion the Azure Pipelines and Azure Repos are interconnected and have to be preserved/versioned together. But how can we archive the old project without loosing any of those dependences? 
+In my opinion the Azure Pipelines and Azure Repos are interconnected and have to be preserved/versioned together. But how can we archive the old project without loosing any of those dependencies? 
 
 ### The solution
 
