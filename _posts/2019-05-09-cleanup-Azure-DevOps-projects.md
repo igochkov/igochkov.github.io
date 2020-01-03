@@ -6,7 +6,7 @@ comments: false
 
 Do you have to cleanup Repos and Pipelines in Azure DevOps (former TFS) after an old legacy project? The chances are that you will face the same challenge as I did, namely:
 
-> How to preserve after deletion the Azure pipeline templates for future reference or restore?
+> How to preserve, after deletion, the Azure pipeline templates for future reference or restore?
 
 ### The problem
 
