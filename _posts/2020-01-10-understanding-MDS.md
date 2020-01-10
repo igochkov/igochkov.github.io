@@ -25,7 +25,7 @@ That means that data changes will always be applied in the production environmen
 - Do not use Azure DevOps repository to store model and data packages.
 - Do not use Azure DevOps release pipeline for deployment of packages.
   
-In conclusion the MDS model and data changes do not fit into de standard software development pattern. Trying to deploy them as standard software will result in conflicts and confusion.
+In conclusion the MDS model and data changes do not fit into the standard software development pattern. Trying to deploy them as standard software will result in conflicts and confusion.
 
 ### Links to Microsoft Docs
 - [Master Data Services - Overview][1]{:target="_blank"}.
