@@ -7,9 +7,6 @@ twitter_username: igochkov
 linkedin_username: ivaylogochkov
 rss: rss
 
-# google_analytics: UA-114964508-1
-application_insights: dce76921-d897-4d62-83d8-01124f0df349
-
 timezone: Europe/Amsterdam
 permalink: /:title
 markdown: kramdown
