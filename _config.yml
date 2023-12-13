@@ -1,26 +1,23 @@
-title: Ivaylo Gochkov - Blog
-author: Ivaylo Gochkov
+title: 'while awake: code()'
 url: "http://blog.gochkov.com"
+author:
+  name: Ivaylo Gochkov
 
-github_username:  igochkov
-twitter_username: igochkov
-linkedin_username: ivaylogochkov
-rss: rss
-
-timezone: Europe/Amsterdam
-permalink: /:title
-markdown: kramdown
-theme: minima
-show_excerpts: false
-
-minima:
-  date_format: "%d %B %Y"
-
-disqus:
-  shortname: igochkov
+#theme: minima
+remote_theme: jekyll/minima
 
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 header_pages:
   - about.md
+
+minima:
+  skin: dark
+  date_format: "%d %B %Y"
+  social_links:
+    - { platform: github,         user_url: "https://github.com/igochkov" }
+    - { platform: linkedin,       user_url: "https://www.linkedin.com/in/ivaylogochkov" }
+    - { platform: rss,            user_url: "feed.xml" }
+
