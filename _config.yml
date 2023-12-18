@@ -1,4 +1,4 @@
-title: 'while awake: code()'
+title: 'Ivaylo Gochkov - Blog'
 url: "http://blog.gochkov.com"
 author:
   name: Ivaylo Gochkov
@@ -10,14 +10,13 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-header_pages:
-  - about.md
+# header_pages:
+#   - about.md
 
 minima:
   skin: dark
   date_format: "%d %B %Y"
   social_links:
-    - { platform: github,         user_url: "https://github.com/igochkov" }
     - { platform: linkedin,       user_url: "https://www.linkedin.com/in/ivaylogochkov" }
+    - { platform: github,         user_url: "https://github.com/igochkov" }
     - { platform: rss,            user_url: "feed.xml" }
-
