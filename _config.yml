@@ -1,4 +1,4 @@
-title: 'Ivaylo Gochkov - Blog'
+title: 'Sparks Of Intelligence'
 url: "http://blog.gochkov.com"
 author:
   name: Ivaylo Gochkov
@@ -10,8 +10,8 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-# header_pages:
-#   - about.md
+header_pages:
+  - about.md
 
 minima:
   skin: dark
